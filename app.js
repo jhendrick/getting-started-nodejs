@@ -8,6 +8,11 @@ app.get('/', function(req, res){
     res.end();
 });
 
+const rook = require('rookout');
+rook.start({
+    token: 'c7a0d0a38b4af5546152ffdba16c8831c9b52f7f20e2107e3051bd74bd6517ae'
+})
+
 var port = process.env.PORT || 8080;
 app.listen(port);
 
